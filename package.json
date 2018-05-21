@@ -16,6 +16,8 @@
   "dependencies": {
     "babel-preset-es2016": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "node-sass": "^4.7.2",
+    "prerender-spa-plugin": "^2.1.0",
     "v-img": "^0.1.9",
     "vue": "^2.5.2",
     "vue-material": "^1.0.0-beta-7",

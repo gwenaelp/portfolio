@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-      <md-toolbar class="md-transparent">
-        <h3 class="md-title">Profile</h3>
-      </md-toolbar>
       <div style="background: url(static/header-bg.png) no-repeat center top; height: 550px; margin-bottom:-265px">
       </div>
 
@@ -12,15 +9,12 @@
         <h1 class="profileTitle">Gwenael Pluchon</h1>
         <h2 class="profileTitle">Front-end Developer</h2>
       <div class="mainButtonBar">
-          <md-button v-scroll-to="'#mainTabs'" class="md-raised" style="background-color: #53346D">Info</md-button>
+          <md-button  class="md-raised" style="background-color: #53346D" href="https://gwenaelp.github.io/blog" target="_blank">Blog</md-button>
+          <md-button class="md-raised" style="background-color: #b6445d" href="static/Gwenael Pluchon Resume.pdf" target="_blank">
+            Resume
+          </md-button>
           <span>
-            <md-button class="md-raised" style="background-color: #b6445d">Blog</md-button>
-            <md-tooltip>
-              Not ready yet!
-            </md-tooltip>
-          </span>
-          <span>
-            <md-button class="md-raised">Message</md-button>
+            <md-button class="md-raised" href="mailto://work@gwenp.fr" style="margin-left: 0">Message</md-button>
             <md-tooltip>
               Send me a message to work@gwenp.fr !
             </md-tooltip>
@@ -61,10 +55,10 @@
               <div class="text" style="margin-top: -80px">
                 <h3>Capensis Research And Development Engineer</h3>
                 <h4>R&D engineer for the Open Source project Canopsis.</h4>
-                <md-card md-with-hover style="margin-bottom: 20px">
-                  <md-button class="md-raised">www.canopsis.com</md-button>
-                  <md-button class="md-raised">demo</md-button>
-                </md-card>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://www.canopsis.com" target="_blank">www.canopsis.com</md-button>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://demo.canopsis.net/" target="_blank">demo</md-button>
+                </div>
                 <ul style="padding-left: 0px">
                   <li>Development (Python, Javascript, EmberJS, html5, CSS3, NoSql, AMQP)</li>
                   <li>Client needs analysis, costing, and tasks monitoring</li>
@@ -108,60 +102,135 @@
           <md-list class="portfolio-list">
             <md-list-item>
               <div>
-                <md-toolbar class="md-transparent">
+                <md-toolbar style="background: #424242">
+                  <h3 class="md-title">Chispa - a Realtime Websocket storage service</h3>
+                </md-toolbar>
+                <div class="techlist">
+                  <span class="chip">Service</span>
+                  <span class="chip">Websocket</span>
+                  <span class="chip">Vue.js</span>
+                  <span class="chip">Webpack</span>
+                  <span class="chip">ES6</span>
+                  <span class="chip">Node</span>
+                </div>
+                <div class="content description">
+                  <p>A service providing a realtime api to push and read json documents.</p>
+                  <p>The project consist of a server, listening to websocket messages, and a client library, in JS (only JS at the moment).</p>
+                  <p>I also developped a npm module to automatically sync Vuex stores with a Chispa backend. Thus, the store is saved in realtime through websocket!</p>
+                </div>
+              </div>
+            </md-list-item>
+            <md-list-item>
+              <div>
+                <md-toolbar style="background: #424242">
+                  <h3 class="md-title">Vue-git-cms - A static CMS using Github to store files</h3>
+                </md-toolbar>
+                <div class="techlist">
+                  <span class="chip">Webapp</span>
+                  <span class="chip">Github API</span>
+                  <span class="chip">Vue.js</span>
+                  <span class="chip">Webpack</span>
+                </div>
+                <div class="content description">
+                  <p>This project is a web admin served statically, that allows to edit Github repositories containing web pages served on Github Pages.
+                  </p>
+                  <p>Everything is statically served (the admin webapp as well).</p>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="https://gwenaelp.github.io/vue-git-cms/" target="_blank">Admin page</md-button>
+                </div>
+                </div>
+                <md-subheader>Screenshots</md-subheader>
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/vue-git-cms/admin.png` }" src="../static/projects/vue-git-cms/admin_small.png" />
+                </div>
+              </div>
+            </md-list-item>
+            <md-list-item>
+              <div>
+                <md-toolbar style="background: #424242">
+                  <h3 class="md-title">Vue-plugins - A plugin index for Vue.js</h3>
+                </md-toolbar>
+                <div class="techlist">
+                  <span class="chip">Webapp</span>
+                  <span class="chip">Vue.js</span>
+                  <span class="chip">Webpack</span>
+                </div>
+                <div class="content description">
+                  <p>This project list vue.js repositories and present them in a searchable, human-readable list.</p>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://vue-plugins.org" target="_blank">Website</md-button>
+                </div>
+                </div>
+                <md-subheader>Screenshots</md-subheader>
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/vue-plugins/vue-plugins.png` }" src="../static/projects/vue-plugins/vue-plugins_small.png" />
+                </div>
+              </div>
+            </md-list-item>
+            <md-list-item>
+              <div>
+                <md-toolbar style="background: #424242">
                   <h3 class="md-title">uComments - Comment system for static websites</h3>
                 </md-toolbar>
-                <md-subheader>Description</md-subheader>
                 <div class="techlist">
-                  <span class="chip">Progressive webapp</span>
+                  <span class="chip">Webapp</span>
                   <span class="chip">Firebase</span>
                   <span class="chip">React</span>
                   <span class="chip">Vue.js</span>
                   <span class="chip">Webpack</span>
                 </div>
                 <div class="content description">
-                  A short project, (5 days of development) aiming to establish an alternative to disqus, using realtime technologies.<br/>
-                  Everything was developped with only Firebase as backend. The application is served with a static file server and every data is send through websockets, allowing instant refresh (in the admin and in the comment module) when a comment is posted or modified.
+                  <p>A short project, (5 days of development) aiming to establish an alternative to disqus, using realtime technologies.</p>
+                  <p>Everything was developped with only Firebase as backend. The application is served with a static file server and every data is send through websockets, allowing instant refresh (in the admin and in the comment module) when a comment is posted or modified.</p>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="https://gwenaelp.github.io/uComment/admin/" target="_blank">Admin page</md-button>
+                </div>
                 </div>
                 <md-subheader>Screenshots</md-subheader>
-                <img v-img="{ src: `../static/projects/ucomments_admin1.png` }" src="../static/projects/ucomments_admin1_small.png" />
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/ucomments_admin1.png` }" src="../static/projects/ucomments_admin1_small.png" />
+                </div>
               </div>
             </md-list-item>
             <md-list-item>
               <div>
-                <md-toolbar class="md-transparent">
-                  <h3 class="md-title">Verbs conjugator ES - Mobile app to learn spanish verbs conjugation</h3>
+                <md-toolbar style="background: #424242">
+                  <h3 class="md-title">Verbs conjugator ES - Mobile app</h3>
                 </md-toolbar>
-                <md-subheader>Description</md-subheader>
                 <div class="techlist">
-                  <span class="chip">Progressive webapp</span>
+                  <span class="chip">Hybrid webapp</span>
                   <span class="chip">React</span>
                   <span class="chip">Cordova</span>
                   <span class="chip">Webpack</span>
                 </div>
                 <div class="content description">
-                  A small progressive webapp available online, and bundled as an offline android app.<br/>This project was done to try React performance with huge sets of data displayed, and to develop my presence on the Google Play Store.
+                  <p>A small hybrid webapp available online, and bundled as an offline android app.</p><p>This project was done to try React performance with huge sets of data displayed, and to develop my presence on the Google Play Store.</p>
+                </div>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://www.verbsconjugator.site/" target="_blank">Website</md-button>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="https://play.google.com/store/apps/details?id=io.gwenaelp.verbsconjugator_es" target="_blank">Play Store page</md-button>
                 </div>
                 <md-subheader>Screenshots</md-subheader>
-                <img v-img="{ src: `../static/projects/verbsconjugator-es/verbsconj1.png`, group:'vc-es' }" src="../static/projects/verbsconjugator-es/verbsconj1_small.png" />
-                <img v-img="{ src: `../static/projects/verbsconjugator-es/verbsconj2.png`, group:'vc-es' }" src="../static/projects/verbsconjugator-es/verbsconj2_small.png" />
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/verbsconjugator-es/verbsconj1.png`, group:'vc-es' }" src="../static/projects/verbsconjugator-es/verbsconj1_small.png" />
+                  <img v-img="{ src: `../static/projects/verbsconjugator-es/verbsconj2.png`, group:'vc-es' }" src="../static/projects/verbsconjugator-es/verbsconj2_small.png" />
+                </div>
               </div>
             </md-list-item>
             <md-list-item>
               <div>
-                <md-toolbar class="md-transparent">
+                <md-toolbar style="background: #424242">
                   <h3 class="md-title">Readme offline</h3>
                 </md-toolbar>
-                <md-subheader>Description</md-subheader>
                 <div class="techlist">
-                  <span class="chip">Progressive webapp</span>
+                  <span class="chip">Hybrid webapp</span>
                   <span class="chip">Dashy</span>
                   <span class="chip">Ember.js</span>
                   <span class="chip">Cordova</span>
                 </div>
                 <div class="content description">
                   <p>
-                    A small progressive webapp made with the Dashy framework (see related project) that serves as a proof of concept.
+                    A small hybrid webapp made with the Dashy framework (see related project) that serves as a proof of concept.
                   </p>
                   <p>
                     This mobile application allows to download a light version of webpages directly in your browser and to view them once you are offline.<br/>
@@ -169,18 +238,19 @@
                   </p>
                 </div>
                 <md-subheader>Screenshots</md-subheader>
-                <img v-img="{ src: `../static/projects/readmeoffline/featuregraphic.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/featuregraphic_small.png" />
-                <img v-img="{ src: `../static/projects/readmeoffline/content screen.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/content screen_small.png" />
-                <img v-img="{ src: `../static/projects/readmeoffline/article view.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/article view_small.png" />
-                <img v-img="{ src: `../static/projects/readmeoffline/news feed.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/news feed_small.png" />
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/readmeoffline/featuregraphic.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/featuregraphic_small.png" />
+                  <img v-img="{ src: `../static/projects/readmeoffline/content screen.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/content screen_small.png" />
+                  <img v-img="{ src: `../static/projects/readmeoffline/article view.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/article view_small.png" />
+                  <img v-img="{ src: `../static/projects/readmeoffline/news feed.png`, group:'readmeoffline' }" src="../static/projects/readmeoffline/news feed_small.png" />
+                </div>
               </div>
-              </md-list-item>
+            </md-list-item>
             <md-list-item>
               <div>
-                <md-toolbar class="md-transparent">
-                  <h3 class="md-title">Dashy - Framework to create applications without programming</h3>
+                <md-toolbar style="background: #424242">
+                  <h3 class="md-title">Dashy - Webapp Framework</h3>
                 </md-toolbar>
-                <md-subheader>Description</md-subheader>
                 <div class="techlist">
                   <span class="chip">Software Architecture</span>
                   <span class="chip">Ember.js</span>
@@ -188,24 +258,42 @@
                   <span class="chip">REST</span>
                   <span class="chip">Firebase</span>
                 </div>
-                content
+                  <p>
+                    A framework built on top of Ember.js allowing to create applications with JSON or a visual editor.
+                  </p>
+                  <p>
+                    It put the focus on code reuse, components and mixins. Data descriptors, data bindings, and views are written in JSON.
+                  </p>
                 <md-subheader>Screenshots</md-subheader>
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/dashy/readmeoffline-content-screen.png`, group:'dashy' }" src="../static/projects/dashy/readmeoffline-content-screen_small.png" />
+                  <img v-img="{ src: `../static/projects/dashy/api-viewer.png`, group:'dashy' }" src="../static/projects/dashy/api-viewer_small.png" />
+                </div>
               </div>
-              </md-list-item>
+            </md-list-item>
             <md-list-item>
               <div>
-                <md-toolbar class="md-transparent">
+                <md-toolbar style="background: #424242">
                   <h3 class="md-title">Canopsis frontend</h3>
                 </md-toolbar>
-                <md-subheader>Description</md-subheader>
                 <div class="techlist">
                   <span class="chip">Software Architecture</span>
                   <span class="chip">Ember.js</span>
                   <span class="chip">REST</span>
                 </div>
+                <div>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://www.canopsis.com" target="_blank">Website</md-button>
+                  <md-button class="md-raised" style="background-color: #b6445d" href="http://demo.canopsis.net/" target="_blank">demo</md-button>
+                </div>
+                <div class="content description">
+                  <p>
+                    An editable dashboarding system, modular and open source.
+                  </p>
+                </div>
                 <md-subheader>Screenshots</md-subheader>
-                <img v-img="{ src: `../static/projects/canopsis/bac_events.png`, group:'canopsis' }" src="../static/projects/canopsis/bac_events_small.png" />
-
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/canopsis/bac_events.png`, group:'canopsis' }" src="../static/projects/canopsis/bac_events_small.png" />
+                </div>
               </div>
               </md-list-item>
           </md-list>
@@ -275,11 +363,11 @@ export default {
 }
 
 h1.profileTitle {
-  position: absolute; left: 60%; top: 390px;
+  position: absolute; left: 60%; top: 320px;
 }
 
 h2.profileTitle {
-  position: absolute; left: 60%; top: 420px;
+  position: absolute; left: 60%; top: 360px;
 }
 
 .mainButtonBar {
@@ -290,7 +378,7 @@ h2.profileTitle {
   .profileAvatar {
     width: 75px!important;
     height: 75px!important;
-    position: absolute;
+    position: absolute!important;
     top: 342px;
     left: 18px;
   }
@@ -312,15 +400,18 @@ h2.profileTitle {
   }
 }
 
-#app {
-  font-family: "WorkSans",sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+body {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #241730, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #241730, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+}
+#app {
+  font-family: "WorkSans",sans-serif;
+  margin: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  max-width: 1024px;
   color: white;
 }
 
@@ -379,4 +470,28 @@ h2.profileTitle {
   line-height: 140%;
   margin-bottom: 40px;
 }
+
+button div div a {
+  color: white !important;
+  display: block;
+}
+button div div a:hover {
+  text-decoration: none;
+}
+
+.md-button, .md-button-clean {
+  white-space: initial!important;
+}
+
+.md-list-item-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.md-list-item-content div {
+  width: 100%;
+}
+
+::-moz-selection { background: rgb(83, 52, 109)!important}
+::selection { background: rgb(83, 52, 109)!important; }
 </style>
