@@ -103,6 +103,27 @@
             <md-list-item>
               <div>
                 <md-toolbar style="background: #424242">
+                  <h3 class="md-title">vue-diagrams - Vue meets diagrams !</h3>
+                </md-toolbar>
+                <div class="techlist">
+                  <span class="chip">Vue.js</span>
+                  <span class="chip">library</span>
+                  <span class="chip">ES6</span>
+                  <span class="chip">svg</span>
+                  <span class="chip">open source</span>
+                </div>
+                <div class="content description">
+                  <p>An open-source diagramming library built on top of Vue.js. It allows you to create diagram elements, bind them with links, and reorganize everything on the diagram.</p>
+                </div>
+                <md-subheader>Screenshots</md-subheader>
+                <div class="screenshots">
+                  <img v-img="{ src: `../static/projects/vue-diagrams/example1.png` }" src="../static/projects/vue-diagrams/example1_small.png" />
+                </div>
+              </div>
+            </md-list-item>
+            <md-list-item>
+              <div>
+                <md-toolbar style="background: #424242">
                   <h3 class="md-title">Chispa - a Realtime Websocket storage service</h3>
                 </md-toolbar>
                 <div class="techlist">
