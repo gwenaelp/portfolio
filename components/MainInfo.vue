@@ -8,9 +8,9 @@
           Languages
         </h2>
         <div>I can write, talk, and work in the following languages :</div>
-        <img src="~/assets/languages/fr.png" alt="french"/>
-        <img src="~/assets/languages/uk.png" alt="english"/>
-        <img src="~/assets/languages/es.png" alt="spanish"/>
+        <img src="languages/fr.png" alt="french"/>
+        <img src="languages/uk.png" alt="english"/>
+        <img src="languages/es.png" alt="spanish"/>
       </div>
       <div class="bubble social">
         <h2 class="title">

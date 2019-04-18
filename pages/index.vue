@@ -6,22 +6,22 @@
     </div>
     <div class="technos container">
       <h1>I work with:</h1>
-      <img src="~/assets/logos/nuxt.png" alt="nuxt.js"/>
-      <img src="~/assets/logos/vue.png" alt="vue.js"/>
-      <img src="~/assets/logos/node.png" alt="node.js"/>
-      <img src="~/assets/logos/mongodb.png" alt="mongodb"/>
-      <img src="~/assets/logos/jamstack.svg" alt="jamstack"/>
-      <img src="~/assets/logos/rabbitmq.png" alt="rabbitmq"/>
-      <img src="~/assets/logos/linux.png" alt="linux"/>
-      <img src="~/assets/logos/docker.png" alt="docker"/>
-      <img src="~/assets/logos/git.png" alt="git"/>
-      <img src="~/assets/logos/bulma.png" alt="bulma"/>
-      <img src="~/assets/logos/redis.png" alt="redis"/>
-      <img src="~/assets/logos/heroku.png" alt="heroku"/>
-      <img src="~/assets/logos/gitlab.png" alt="gitlab"/>
-      <img src="~/assets/logos/websocket.png" alt="websocket"/>
-      <img src="~/assets/logos/html.png" alt="html"/>
-      <img src="~/assets/logos/css.png" alt="css"/>
+      <img src="logos/nuxt.png" alt="nuxt.js"/>
+      <img src="logos/vue.png" alt="vue.js"/>
+      <img src="logos/node.png" alt="node.js"/>
+      <img src="logos/mongodb.png" alt="mongodb"/>
+      <img src="logos/jamstack.svg" alt="jamstack"/>
+      <img src="logos/rabbitmq.png" alt="rabbitmq"/>
+      <img src="logos/linux.png" alt="linux"/>
+      <img src="logos/docker.png" alt="docker"/>
+      <img src="logos/git.png" alt="git"/>
+      <img src="logos/bulma.png" alt="bulma"/>
+      <img src="logos/redis.png" alt="redis"/>
+      <img src="logos/heroku.png" alt="heroku"/>
+      <img src="logos/gitlab.png" alt="gitlab"/>
+      <img src="logos/websocket.png" alt="websocket"/>
+      <img src="logos/html.png" alt="html"/>
+      <img src="logos/css.png" alt="css"/>
     </div>
     <div class="dark-bg">
       <Publications class="container" />
