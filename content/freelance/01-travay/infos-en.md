@@ -1,4 +1,4 @@
-## &ast;&ast;&ast;&ast;&ast; Travay - A job board for Haiti, where people are paid with cryptocurrency
+## `&ast;&ast;&ast;&ast;&ast;` Travay - A job board for Haiti, where people are paid with cryptocurrency
 
 A project I worked on as a freelancer. I helped the existing team in developing features and help on architecture.
 
