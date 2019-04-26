@@ -2,7 +2,7 @@
   <div>
     <a class="link right" href="Gwenael Pluchon-Resume-En.pdf">Resume</a>
     <nuxt-link class="link" to="/">Home</nuxt-link>
-    <nuxt-link class="link" to="/portfolio">Portfolio</nuxt-link>
+    <nuxt-link class="link" to="/portfolio">Projects</nuxt-link>
     <nuxt-link class="link" to="/timeline">Timeline</nuxt-link>
     <nuxt-link class="link" to="/freelance">Freelance</nuxt-link>
   </div>
