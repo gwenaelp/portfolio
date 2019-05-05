@@ -1,7 +1,7 @@
 <template>
   <div class="reviews">
     <h1 class="title">
-      They choosed to trust me :
+      They worked with me :
     </h1>
     <div class="columns">
       <div
